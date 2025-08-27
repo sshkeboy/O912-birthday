@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Youthtale - Page 3</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #D3D1CE;
+      color: #090F15;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+      text-align: center;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .inventory {
+      display: grid;
+      grid-template-columns: repeat(2, 80px);
+      gap: 20px;
+      background: #262E36;
+      padding: 20px;
+      border: 4px solid #090F15;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .flower {
+      width: 64px;
+      height: 64px;
+      image-rendering: pixelated;
+      animation: float 2s infinite ease-in-out;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-5px); }
+      100% { transform: translateY(0); }
+    }
+
+    p {
+      max-width: 500px;
+      margin: 20px auto;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+    }
+
+    .btn {
+      background-color: #262E36;
+      color: #090F15;
+      padding: 10px 20px;
+      border: 2px solid #090F15;
+      border-radius: 6px;
+      cursor: pointer;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #090F15;
+      color: #D3D1CE;
+    }
+  </style>
+</head>
+<body>
+  <h1>Here's a lil flower for you, handsome xixi</h1>
+
+  <div class="inventory">
+    <img class="flower" src="https://i.ibb.co/5n6qTt1/sunflower.png" alt="Sunflower">
+    <img class="flower" src="https://i.ibb.co/RQH9n6J/red-rose.png" alt="Red Rose">
+    <img class="flower" src="https://i.ibb.co/ZYVjtr0/yellow-rose.png" alt="Yellow Rose">
+    <img class="flower" src="https://i.ibb.co/xY1pxkr/white-tulip.png" alt="White Tulip">
+  </div>
+
+  <p>
+    I give you this flower, flower language is romantic too right?<br>
+    I give you these flowers cause you're one of such a strong person I've ever know,<br>
+    your braveness, your strongness, your knowledge, just everything about you<br>
+    I put you into these flower. You can ask me whats the meaning if you want to,<br>
+    but i want you to guess it :b. So, here's your flower!
+  </p>
+
+  <div class="buttons">
+    <a href="page2.html" class="btn">Back</a>
+    <a href="page4.html" class="btn">Next</a>
+  </div>
+</body>
+</html>
