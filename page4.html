@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Youthtale - Page 4</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #D3D1CE;
+      color: #090F15;
+      text-align: center;
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+    }
+
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      font-size: 16px;
+      margin-top: 40px;
+    }
+
+    .message {
+      margin: 30px auto;
+      width: 80%;
+      font-size: 16px;
+      line-height: 1.6;
+      background: rgba(255, 255, 255, 0.7);
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #262E36;
+      color: #090F15;
+      padding: 12px 20px;
+      margin: 8px;
+      border: none;
+      border-radius: 10px;
+      font-family: 'Nunito', sans-serif;
+      font-size: 14px;
+      cursor: pointer;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #39434f;
+    }
+
+    /* Awan pixel */
+    .cloud {
+      position: absolute;
+      top: 50px;
+      width: 80px;
+      height: 50px;
+      background: #fff;
+      border: 2px solid #090F15;
+      border-radius: 20px;
+      animation: moveClouds 40s linear infinite;
+    }
+
+    .cloud::before, .cloud::after {
+      content: '';
+      position: absolute;
+      background: #fff;
+      border: 2px solid #090F15;
+      border-radius: 50%;
+    }
+
+    .cloud::before {
+      width: 40px;
+      height: 40px;
+      left: -20px;
+      top: 5px;
+    }
+
+    .cloud::after {
+      width: 50px;
+      height: 50px;
+      right: -25px;
+      top: -10px;
+    }
+
+    @keyframes moveClouds {
+      from { left: -100px; }
+      to { left: 110%; }
+    }
+
+    /* Avatar pixel */
+    .avatar {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .avatar img {
+      width: 200px;
+      image-rendering: pixelated;
+      animation: blink 4s infinite;
+    }
+
+    @keyframes blink {
+      0%, 90%, 100% { opacity: 1; }
+      95% { opacity: 0.6; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Happy 20th birthday for you, cherish.</h1>
+  <div class="message">
+    <p>Omg you've grown up so much :[ don't worry you're still my baby whatever your age is.. no worries... lmao just kidding, but ofcourse you're still my baby :b</p>
+
+    <p>Sayangkuu, there's a lot of thing you've faced, either when you already with me or far from it. It's not that easy isn't it? But here you are, standing here dengan versi kamu yang jauh lebih kuat, lebih berani, jauh lebih hebat. I don't know how many you've went through, but really, i'm really proud of you.. i am really proud of you, i'm really proud for having such a "perfect" man like you. I know you'll say "you're not perfect" but nahhh, you're still perfect in my eyes with all your flaws in it. If i can tell you how proud i am to have a boyfriend like you, i'll show the world of any person that i saw, and tell 'em that i have such a very very WONDERFUL partner like youu :[.</p>
+
+    <p>Sayangku, thankyou for already being such a strong person and survive this cruel world. After many bad things you've faced that make you, hurt, so bad. But here you are, stand here and keep went through all the things you gonna faced. Thankyou so much sayang, thankyou for give me a chance for celebrate your birthday.. and you need to remember, you have me now! You have your trusted friends, just remember you're not alone. You need to remember that many people proud of you, that you're loved &lt;3</p>
+  </div>
+
+  <div class="buttons">
+    <a href="page3.html" class="btn">Back</a>
+    <a href="page5.html" class="btn">Next</a>
+  </div>
+
+  <!-- Awan -->
+  <div class="cloud" style="top:80px; animation-delay: 0s;"></div>
+  <div class="cloud" style="top:150px; animation-delay: 10s;"></div>
+  <div class="cloud" style="top:220px; animation-delay: 20s;"></div>
+
+  <!-- Avatar -->
+  <div class="avatar">
+    <img src="images/avatar.png" alt="Pixel Avatar">
+  </div>
+</body>
+</html>
