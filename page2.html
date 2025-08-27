@@ -3,42 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Birthday</title>
+  <title>Youthtale - Page 2</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      min-height: 100vh;
+      padding: 0;
+      font-family: 'Nunito', sans-serif;
+      background-color: #D3D1CE;
+      color: #090F15;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
-      background: linear-gradient(120deg, #89f7fe, #66a6ff);
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      color: #fff;
-      padding: 20px;
+      height: 100vh;
       text-align: center;
     }
-    .container {
-      max-width: 600px;
-    }
     h2 {
-      font-size: 2rem;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 20px;
       margin-bottom: 20px;
     }
     p {
-      font-size: 1.1rem;
+      max-width: 600px;
+      font-size: 16px;
       line-height: 1.6;
+      margin-bottom: 40px;
+    }
+    .btn-container {
+      display: flex;
+      gap: 15px;
+    }
+    .nav-btn {
+      padding: 10px 24px;
+      background-color: #262E36;
+      color: #D3D1CE;
+      border: none;
+      border-radius: 8px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: 0.2s;
+    }
+    .nav-btn:hover {
+      transform: scale(1.05);
+      background-color: #1b2229;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h2>Happy Birthday, My Cherish &lt;3</h2>
-    <p>
-      I'm not good at making something thru words, and I made this with a lil help and cheat hehe..  
-      but I made this with all my sincerely and I hope you like it.  
-      I'll make it much better someday when I already study 'bout it and have more knowledge about these hehe..  
-      lemme represent this for you, read it slowly yaa :D
-    </p>
+  <h2>Happy Birthday, My Cherish &lt;3</h2>
+  <p>
+    I'm not good at making something through words,  
+    and I made this with a lil help and cheat hehe..  
+    but I made this with all my sincerity and I hope you like it.  
+    I'll make it much better someday when I already study 'bout it and have more knowledge about these hehe..  
+    Lemme represent this for you, read it slowly yaa :D
+  </p>
+  <div class="btn-container">
+    <button class="nav-btn" onclick="window.location.href='index.html'">Back</button>
+    <button class="nav-btn" onclick="window.location.href='page3.html'">Next</button>
   </div>
 </body>
 </html>
