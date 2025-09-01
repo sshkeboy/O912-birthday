@@ -6,61 +6,60 @@
   <title>O912 Birthday</title>
   <style>
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #89f7fe, #66a6ff);
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background: #f8f8f8;
       margin: 0;
       padding: 0;
-      text-align: center;
-      color: #333;
     }
     header {
-      padding: 30px 10px;
+      background: #222;
       color: white;
+      padding: 20px;
     }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    .container {
+    h1 { margin: 0; }
+    nav {
+      margin: 30px 0;
       display: flex;
       justify-content: center;
-      flex-wrap: wrap;
-      margin: 30px auto;
-      max-width: 800px;
       gap: 20px;
+      flex-wrap: wrap;
     }
-    .card {
+    nav a {
+      display: inline-block;
+      width: 180px;
+      padding: 20px;
       background: white;
-      padding: 30px;
-      border-radius: 16px;
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      text-decoration: none;
       color: #333;
-      flex: 1 1 200px;
+      text-decoration: none;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    nav a:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.2);
     }
     footer {
-      margin: 40px 0 20px;
+      margin-top: 40px;
       font-size: 14px;
-      color: white;
+      color: #666;
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>🎉 Welcome to O912 Birthday 🎉</h1>
-    <p>Pilih halaman untuk melanjutkan</p>
+    <h1>Welcome to Youthtale page ! 🎉</h1>
   </header>
 
-  <div class="container">
-    <a href="page2.html" class="card">Go to Page 2</a>
-    <a href="page3.html" class="card">Go to Page 3</a>
-    <a href="page4.html" class="card">Go to Page 4</a>
-  </div>
+  <main>
+    <p>Pilih halaman ucapan yang ingin kamu baca:</p>
+    <nav>
+      <a href="page2.html">Ucapan Pertama 🎂</a>
+      <a href="page3.html">Ucapan Kedua 🎁</a>
+      <a href="page4.html">Ucapan Ketiga 💌</a>
+    </nav>
+  </main>
 
   <footer>
     &copy; 2025 sshkeboy | GitHub Pages
