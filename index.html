@@ -3,53 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Youthtale</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <title>O912 Birthday</title>
   <style>
     body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #89f7fe, #66a6ff);
       margin: 0;
       padding: 0;
-      font-family: 'Nunito', sans-serif;
-      background-color: #D3D1CE;
-      color: #090F15;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
       text-align: center;
+      color: #333;
     }
-    h1 {
-      font-family: 'Press Start 2P', cursive;
-      font-size: 24px;
-      margin-bottom: 20px;
+    header {
+      padding: 30px 10px;
+      color: white;
     }
-    .subtitle {
-      font-size: 16px;
-      margin-bottom: 40px;
-      font-style: italic;
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
     }
-    .start-btn {
-      padding: 12px 28px;
-      background-color: #262E36;
-      color: #090F15;
-      border: none;
-      border-radius: 8px;
-      font-size: 16px;
-      font-family: 'Nunito', sans-serif;
-      cursor: pointer;
-      transition: 0.2s;
+    .container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 30px auto;
+      max-width: 800px;
+      gap: 20px;
     }
-    .start-btn:hover {
-      transform: scale(1.05);
-      background-color: #1b2229;
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+      text-decoration: none;
+      color: #333;
+      flex: 1 1 200px;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 20px rgba(0,0,0,0.3);
+    }
+    footer {
+      margin: 40px 0 20px;
+      font-size: 14px;
+      color: white;
     }
   </style>
 </head>
 <body>
-  <h1>Welcome to Youthtale Page!</h1>
-  <p class="subtitle">Press start to continue</p>
-  <button class="start-btn" onclick="window.location.href='page2.html'">Start</button>
+  <header>
+    <h1>🎉 Welcome to O912 Birthday 🎉</h1>
+    <p>Pilih halaman untuk melanjutkan</p>
+  </header>
+
+  <div class="container">
+    <a href="page2.html" class="card">Go to Page 2</a>
+    <a href="page3.html" class="card">Go to Page 3</a>
+    <a href="page4.html" class="card">Go to Page 4</a>
+  </div>
+
+  <footer>
+    &copy; 2025 sshkeboy | GitHub Pages
+  </footer>
 </body>
 </html>
