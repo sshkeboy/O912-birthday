@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LASTLY, MY WISH FOR YOU</title>
+  <style>
+    body {
+      background-color: #262E36;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .box {
+      background-color: #D3D1CE;
+      padding: 20px 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      text-align: left;
+      color: black;
+    }
+    h1 {
+      font-family: 'Starlight Rune', cursive;
+      margin-top: 0;
+    }
+    p {
+      font-family: 'Coolvetica', sans-serif;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>LAST NOT LEAST ✨</h1>
+    <p id="text"></p>
+    <a href="index.html">🏠 BACK TO MENU</a>
+  </div>
+
+  <script>
+    const text = "Lastly, i'll never tired to say this, that i'm really  proud of you. You need to know, how proud i am to have you and know you, you need to remember how proud your friends to have someone amazing like you. You need to remember, that you are precious, you are special, more than special especially for me. You are worthy sayang, you really do. This world too cruel for someone like you, and i'm really proud that you're being such a strong person. I hope, dengan semua hal berat yang kamu hadapi, kedepannya kamu akan mendapatkan sebuah feedback yang jauh lebih baik. Mas diberikan dan dipertemukan segala hal baik, mau duniawi dan spiritual. I wish you all the best, sayangku. Once again, Happy 20th Birthday──cherish <3";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
+</body>
+</html>
