@@ -6,41 +6,49 @@
   <title>To My Cherish, A'N</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px;
-      background: #fff0f5;
+      background-color: #262E36;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
     }
-    header {
-      margin-bottom: 30px;
+    .box {
+      background-color: #D3D1CE;
+      padding: 20px 30px;
+      border-radius: 15px;
+      max-width: 700px;
+      text-align: left;
+      color: black;
     }
-    a {
-      display: inline-block;
-      margin-top: 30px;
-      text-decoration: none;
-      padding: 10px 20px;
-      background: #ff69b4;
-      color: white;
-      border-radius: 8px;
+    h1 {
+      font-family: 'Starlight Rune', cursive;
+      margin-top: 0;
     }
-    a:hover { background: #ff4da6; }
+    p {
+      font-family: 'Coolvetica', sans-serif;
+      font-size: 18px;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>PAGE I 🎂</h1>
-  </header>
+  <div class="box">
+    <h1> PAGE I ✨</h1>
+    <p id="text"></p>
+    <a href="page3.html">➡️ NEXT</a>
+  </div>
 
-  <main>
-    <p>
-      Happy 20th birthday for you, cherish. Omg you've grown up so much :[  
-      don't worry you're still my baby whatever your age is.. no worries...  
-      lmao just kidding, but of course you're still my baby :b
-      I still can't make this very well, and can't make anything that good. 
-      But I made this with all my sincerity, so.. I hope you like it? haha :D
-    </p>
-  </main>
-
-  <a href="index.html">⬅ BACK</a>
+  <script>
+    const text = "Happy 20th birthday for you, cherish. Omg you've grown up so much :[  don't worry you're still my baby whatever your age is.. no worries...  lmao just kidding, but of course you're still my baby :b I still can't make this very well, and can't make anything that good. But I made this with all my sincerity, so.. I hope you like it? haha :D";
+    let i = 0;
+    function typeWriter() {
+      if (i < text.length) {
+        document.getElementById("text").innerHTML += text.charAt(i);
+        i++;
+        setTimeout(typeWriter, 50);
+      }
+    }
+    window.onload = typeWriter;
+  </script>
 </body>
 </html>
